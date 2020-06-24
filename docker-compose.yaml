@@ -1,0 +1,11 @@
+---
+services:
+  app:
+    image: sks002/app
+    ports:
+      - "80:80"
+  proxy:
+    image: sks002/proxy
+    ports:
+      - "9999:80"
+version: "2"
